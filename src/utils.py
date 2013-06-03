@@ -136,7 +136,7 @@ def get_pictures_dir():
     get user pictures dir.
     @return: current user's own pictures dir, a string type
     '''
-    picturesDir = os.path.expanduser("~/Pictures")
+    picturesDir = os.path.expanduser("~/Desktop")
     try:
         p = Popen(["xdg-user-dir", "PICTURES"], stdout=PIPE)
     except OSError:    
